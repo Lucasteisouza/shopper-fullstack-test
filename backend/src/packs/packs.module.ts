@@ -9,4 +9,4 @@ import { PacksService } from './packs.service';
   providers: [PacksService],
   controllers: [PacksController],
 })
-export class ProductModule {}
+export class PackModule {}

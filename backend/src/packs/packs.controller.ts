@@ -3,7 +3,7 @@ import { PacksService } from './packs.service';
 import { pack } from './pack.model';
 
 @Controller('packs')
-export class ProductsController {
+export class PacksController {
   constructor(private readonly packsService: PacksService) {}
 
   @Get()
