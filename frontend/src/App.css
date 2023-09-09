@@ -1,42 +1,94 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  height: 100%;
+  background-color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 #root {
   max-width: 1280px;
+  height: 100%;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 1rem;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+header {
+  margin-bottom: 1rem;
+  top: 0;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+header h2 {
+  font-size: 2rem;
+  margin: 0;
+  padding: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+header h3 {
+  margin: 0;
+  padding: 0;
 }
 
-.card {
-  padding: 2em;
+header p {
+  margin: 0;
+  padding: 0;
 }
 
-.read-the-docs {
-  color: #888;
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+form input {
+  margin-top: 1rem;
+  padding: 0.5rem;
+  width: 100%;
+  border-radius: 0.5rem;
+  border: 1px solid #1e90ff;
+  font-size: 1rem;
+  max-width: 50%;
+}
+
+form button {
+  margin-top: 1rem;
+  padding: 0.5rem;
+  width: 100%;
+  border-radius: 0.5rem;
+  border: none;
+  background-color: #1e90ff;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  max-width: 50%;
+}
+
+table {
+  margin-top: 1rem;
+  width: 100%;
+  border-collapse: collapse;
+  border: black 1px solid;
+  border-radius: 0.5rem;
+}
+
+tr {
+  border-bottom: black 1px solid;
+}
+
+th {
+  padding: 0.5rem;
+  border-right: black 1px solid;
+}
+
+td {
+  padding: 0.5rem;
+  border-right: black 1px solid;
 }

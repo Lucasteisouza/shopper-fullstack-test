@@ -13,10 +13,18 @@ export class PacksService {
     return this.packModel.findAll();
   }
 
-  findOne(id: number): Promise<pack> {
+  async findOne(id: number): Promise<pack> {
     return this.packModel.findOne({
       where: {
         id,
+      },
+    });
+  }
+
+  async findByProductId(productId: number): Promise<pack[]> {
+    return this.packModel.findAll({
+      where: {
+        product_id: productId,
       },
     });
   }

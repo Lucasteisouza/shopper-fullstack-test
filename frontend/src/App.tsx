@@ -1,13 +1,13 @@
 import './App.css'
 import Header from './components/Header'
-import FileInput from './components/FileInput'
+import ProductValidator from './components/ProductValidator'
 
 function App() {
 
   return (
     <>
       <Header/>
-      <FileInput/>
+      <ProductValidator/>
     </>
   )
 }

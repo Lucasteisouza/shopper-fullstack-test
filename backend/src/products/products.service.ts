@@ -21,7 +21,7 @@ export class ProductsService {
     });
   }
 
-  async update(product: product): Promise<product> {
+  async update(id: number, product: product): Promise<product> {
     this.productModel.update(product, {
       where: {
         code: product.code,

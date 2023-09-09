@@ -11,6 +11,11 @@ export class PacksController {
     return this.packsService.findAll();
   }
 
+  @Get(':id')
+  getByProductId(id: number): Promise<pack[]> {
+    return this.packsService.findByProductId(id);
+  }
+
   @Put()
   update(pack: pack): Promise<pack> {
     return this.packsService.update(pack);

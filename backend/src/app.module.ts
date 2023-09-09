@@ -1,6 +1,7 @@
 import { Module } from '@nestjs/common';
 import { SequelizeModule } from '@nestjs/sequelize';
 import { ProductModule } from './products/products.module';
+import { PackModule } from './packs/packs.module';
 import { product } from './products/product.model';
 import { pack } from './packs/pack.model';
 
@@ -18,6 +19,7 @@ import { pack } from './packs/pack.model';
       synchronize: true,
     }),
     ProductModule,
+    PackModule,
   ],
 })
 export class AppModule {}

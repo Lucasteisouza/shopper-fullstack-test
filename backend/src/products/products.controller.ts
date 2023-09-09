@@ -1,4 +1,4 @@
-import { Controller, Get, Put } from '@nestjs/common';
+import { Body, Controller, Get, Param, Put } from '@nestjs/common';
 import { ProductsService } from './products.service';
 import { product } from './product.model';
 
@@ -11,8 +11,13 @@ export class ProductsController {
     return this.productsService.findAll();
   }
 
-  @Put()
-  update(product: product): Promise<product> {
-    return this.productsService.update(product);
+  @Get(':id')
+  getOne(@Param() params: any): Promise<product> {
+    return this.productsService.findOne(params.id);
+  }
+
+  @Put(':id')
+  update(@Param() params: any, @Body() product: product): Promise<product> {
+    return this.productsService.update(params.id, product);
   }
 }
