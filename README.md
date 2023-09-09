@@ -1,5 +1,6 @@
 # shopper-fullstack-test
 ### Desenvolvido por Lucas Souza como parte do processo seletivo para a vaga de desenvolvedor Fullstack Jr
+Lucas Teixeira Souza - lucasteisouza@gmail.com - (31)975441211
 
 ## Sobre a aplicação
 A aplicação foi desenvolvida utilizando React Vanilla para o frontend e NestJS para o backend. Devido a limitações de tempo não foi possivel dockerizar toda a aplicação, como eu havia planejado inicialmente. Foi necessário reduzir tempo, usado Docker somente para criação do servidor MySQL.
